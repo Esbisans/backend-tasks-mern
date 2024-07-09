@@ -122,11 +122,6 @@ const deleteTask = async(req, res = response) => {
             msg: 'Please talk to the administrator'
         });
     }
-
-    res.json({
-        ok: true,
-        msg: 'deleteTask'
-    });
 }
 
 module.exports = {
