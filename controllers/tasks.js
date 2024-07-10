@@ -99,7 +99,7 @@ const deleteTask = async(req, res = response) => {
 
     try { 
 
-        const task = Task.findById(taskId);
+        const task = await Task.findById(taskId);
 
         if (!task) {
             return res.status(404).json({
